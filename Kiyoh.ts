@@ -110,4 +110,5 @@ module Vindmijnwijn {
 
     // @ts-ignore
     window.Kiyoh = new VMWKiyoh();
+    
 }
