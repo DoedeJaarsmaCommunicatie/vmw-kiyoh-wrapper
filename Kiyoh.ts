@@ -1,3 +1,5 @@
+// import { Vindmijndata } from './app/Vindmijndata'
+
 module Vindmijnwijn {
 
     interface Vindmijndata {
@@ -6,7 +8,7 @@ module Vindmijnwijn {
         [total_score: string] : string | undefined;
     }
     
-    export class VMWKiyoh {
+    class VMWKiyoh {
     
         private _data_url: string = '';
     
@@ -14,9 +16,11 @@ module Vindmijnwijn {
     
         private _average: string | null = null;
     
-        public vmw_data: Vindmijndata = {};
+        private vmw_data: Vindmijndata = {};
     
-        constructor() {}
+        constructor() {
+            
+        }
     
         public setTarget(target: string): this {
             this._target = target;

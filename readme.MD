@@ -1,4 +1,4 @@
-// import { Vindmijndata } from './app/Vindmijndata'
+```js
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -199,3 +199,5 @@ var Vindmijnwijn;
     // @ts-ignore
     window.Kiyoh = new VMWKiyoh();
 })(Vindmijnwijn || (Vindmijnwijn = {}));
+
+```

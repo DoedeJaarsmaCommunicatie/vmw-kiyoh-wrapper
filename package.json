@@ -6,5 +6,15 @@
   "repository": "https://github.com/DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper",
   "author": "Mitch Hijlkema <mitch@doedejaarsma.nl>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  }
 }
