@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Kiyoh_1 = require("../Kiyoh");
 let k = new Kiyoh_1.VMWKiyoh();
-test('Kiyoh', () => {
-    describe('Should be instance of VMWKiyoh', function () {
+describe('Kiyoh base tests', () => {
+    test('Kiyoh', () => {
         expect(k).toBeInstanceOf(Kiyoh_1.VMWKiyoh);
     });
 });
