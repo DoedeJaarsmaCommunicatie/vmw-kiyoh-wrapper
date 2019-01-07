@@ -1,4 +1,4 @@
-export default class VMWKiyoh {
+export declare class VMWKiyoh {
     private _data_url;
     private _target;
     private _average;

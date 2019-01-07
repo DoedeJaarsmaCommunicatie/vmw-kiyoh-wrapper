@@ -102,5 +102,5 @@ class VMWKiyoh {
     set target(value) { this._target = value; }
     set dataUrl(value) { this._data_url = value; }
 }
-exports.default = VMWKiyoh;
+exports.VMWKiyoh = VMWKiyoh;
 //# sourceMappingURL=Kiyoh.js.map
