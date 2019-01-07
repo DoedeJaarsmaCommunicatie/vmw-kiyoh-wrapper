@@ -1,8 +1,8 @@
 import { VMWKiyoh } from '../Kiyoh';
 let k = new VMWKiyoh();
 
-test('Kiyoh', () => {
-    describe('Should be instance of VMWKiyoh', function () {
+describe('Kiyoh base tests', () => {
+    test('Kiyoh', () => {
         expect(k).toBeInstanceOf(VMWKiyoh);
     });
 });
