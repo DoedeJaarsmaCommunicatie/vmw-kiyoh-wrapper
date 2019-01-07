@@ -1,6 +1,6 @@
 {
   "name": "vmw-kiyoh-wrapper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A ts/js wrapper for the vmw open Kiyoh data",
   "main": "./dist/Kiyoh.js",
   "types": "./dist/Kiyoh.d.ts",
