@@ -1,0 +1,20 @@
+{
+  "name": "vmw-kiyoh-wrapper",
+  "version": "1.0.0",
+  "description": "A ts/js wrapper for the vmw open Kiyoh data",
+  "main": "./dist/Kiyoh.js",
+  "types": "./dist/Kiyoh.d.ts",
+  "repository": "git@github.com:DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper.git",
+  "author": "Mitch Hijlkema <mitch@doedejaarsma.nl>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.2.2"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
