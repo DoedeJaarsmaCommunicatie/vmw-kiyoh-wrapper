@@ -1,6 +1,6 @@
 {
   "name": "vmw-kiyoh-wrapper",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "A ts/js wrapper for the vmw open Kiyoh data",
   "main": "./dist/Kiyoh.js",
   "types": "./dist/Kiyoh.d.ts",
@@ -10,11 +10,14 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0",
+    "@types/jest": "^23.3.12",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
     "typescript": "^3.2.2"
   },
   "scripts": {
-    "build": "tsc"
+    "prepare": "build",
+    "build": "tsc",
+    "test": "jest --config jestconfig.json"
   }
 }
