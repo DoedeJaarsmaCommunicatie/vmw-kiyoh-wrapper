@@ -1,8 +1,8 @@
-declare abstract class DataSources {
-    _data_url: string;
-    liveURL: string;
-    testURL: string;
-    liveData(): void;
-    testData(): void;
-    dataUrl: string;
+export abstract class DataSources {
+  private _data_url;
+  liveURL: string;
+  testURL: string;
+  liveData(): this;
+  testData(): this;
+  dataUrl: string;
 }
