@@ -29,7 +29,19 @@ var __awaiter =
             );
         });
     };
+var __importStar =
+    (this && this.__importStar) ||
+    function(mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null)
+            for (var k in mod)
+                if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+        result['default'] = mod;
+        return result;
+    };
 Object.defineProperty(exports, '__esModule', { value: true });
+const req = __importStar(require('./app/utils/MakeRequest'));
 class VMWKiyoh {
     constructor() {
         this._data_url = '';
@@ -68,7 +80,9 @@ class VMWKiyoh {
     parseData() {
         return __awaiter(this, void 0, void 0, function*() {
             try {
-                yield this.checkAndGetData();
+                yield this.checkAndGetData().then(res => {
+                    return true;
+                });
             } catch (e) {
                 console.warn(e);
             }
@@ -78,40 +92,31 @@ class VMWKiyoh {
     checkAndGetData() {
         return __awaiter(this, void 0, void 0, function*() {
             console.info('No data set!');
-            try {
-                console.info('Fetching data');
-                yield this.fetchData();
-                console.info('Data set');
-                return this;
-            } catch (e) {
-                console.warn(e);
-                return this;
-            }
+            return new Promise((resolve, reject) => {
+                console.log('Fetching data');
+                this.fetchData()
+                    .then(res => {
+                        console.log(res);
+                        window.vmw = this.vmw_data = res.data;
+                        console.log('Data fetched');
+                        return this.vmw_data;
+                    })
+                    .catch(err => {
+                        return err;
+                    });
+            });
         });
     }
     fetchData() {
         return __awaiter(this, void 0, void 0, function*() {
-            const xhr = new XMLHttpRequest();
-            xhr.open('get', this.dataUrl);
-            try {
-                xhr.onreadystatechange = yield this.xhrReady();
-                yield xhr.send();
-            } catch (e) {
-                console.warn(e);
-            }
-        });
-    }
-    xhrReady() {
-        return __awaiter(this, void 0, void 0, function*() {
-            if (this.readyState == 4 && this.status == 200) {
-                window.vmw = {};
-                try {
-                    window.vmw = yield JSON.parse(this.response).data;
-                    return JSON.parse(this.response).data;
-                } catch (e) {
-                    console.warn(e);
-                }
-            }
+            return yield req
+                .makeRequest('get', this.dataUrl)
+                .then(res => {
+                    return JSON.parse(res);
+                })
+                .catch(err => {
+                    return err;
+                });
         });
     }
     get average() {
