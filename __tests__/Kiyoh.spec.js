@@ -36,4 +36,14 @@ describe('Kiyoh', function() {
             expect(k.dataUrl).toBe(k.liveURL);
         });
     });
+    describe('vmw_data', function() {
+        test('Is empty object', function() {
+            expect(k.vmw_data).toEqual({});
+        });
+        test('Is filled after parse', () => {
+            k.testData()
+                .parseData()
+                .then(expect(k.vmw_data).toContain('total_score'));
+        });
+    });
 });

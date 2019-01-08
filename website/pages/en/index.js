@@ -102,7 +102,7 @@ class Index extends React.Component {
             >
                 <h2>Feature Callout</h2>
                 <MarkdownBlock>
-                    These are features of this project
+                    # These are features of this project
                 </MarkdownBlock>
             </div>
         );
@@ -151,17 +151,18 @@ class Index extends React.Component {
             <Block layout="fourColumn">
                 {[
                     {
-                        content: 'This is the content of my feature',
+                        content:
+                            'Quick and easy loading and setting of our open data',
                         image: `${baseUrl}img/docusaurus.svg`,
                         imageAlign: 'top',
-                        title: 'Feature One',
+                        title: 'Easy',
                     },
-                    {
-                        content: 'The content of my second feature',
-                        image: `${baseUrl}img/docusaurus.svg`,
-                        imageAlign: 'top',
-                        title: 'Feature Two',
-                    },
+                    // {
+                    //     content: 'The content of my second feature',
+                    //     image: `${baseUrl}img/docusaurus.svg`,
+                    //     imageAlign: 'top',
+                    //     title: 'Feature Two',
+                    // },
                 ]}
             </Block>
         );

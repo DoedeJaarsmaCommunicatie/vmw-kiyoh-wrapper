@@ -45,11 +45,11 @@ const siteConfig = {
     ],
 
     // If you have users set above, you add it here:
-    users,
+    // users,
 
     /* path to images for header/footer */
-    headerIcon: 'img/docusaurus.svg',
-    footerIcon: 'img/docusaurus.svg',
+    headerIcon: '',
+    footerIcon: '',
     favicon: 'img/favicon.png',
 
     /* Colors for website */
@@ -89,8 +89,8 @@ const siteConfig = {
     cleanUrl: true,
 
     // Open Graph and Twitter card images.
-    ogImage: 'img/docusaurus.png',
-    twitterImage: 'img/docusaurus.png',
+    // ogImage: 'img/docusaurus.png',
+    // twitterImage: 'img/docusaurus.png',
 
     // Show documentation's last contributor's name.
     // enableUpdateBy: true,
