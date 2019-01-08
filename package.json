@@ -1,30 +1,30 @@
 {
-  "name": "vmw-kiyoh-wrapper",
-  "version": "2.0.2",
-  "description": "A ts/js wrapper for the vmw open Kiyoh data",
-  "main": "./dist/Kiyoh.js",
-  "types": "./dist/Kiyoh.d.ts",
-  "repository": "git@github.com:DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper.git",
-  "author": "Mitch Hijlkema <mitch@doedejaarsma.nl>",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
-    "@types/jest": "^23.3.12",
-    "husky": "^1.3.1",
-    "jest": "^23.6.0",
-    "prettier": "1.15.3",
-    "pretty-quick": "^1.8.0",
-    "ts-jest": "^23.10.5",
-    "typescript": "^3.2.2"
-  },
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "tsc",
-    "test": "jest --config jestconfig.json"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
+    "name": "vmw-kiyoh-wrapper",
+    "version": "2.0.3",
+    "description": "A ts/js wrapper for the vmw open Kiyoh data",
+    "main": "./dist/Kiyoh.js",
+    "types": "./dist/Kiyoh.d.ts",
+    "repository": "git@github.com:DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper.git",
+    "author": "Mitch Hijlkema <mitch@doedejaarsma.nl>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^23.3.12",
+        "husky": "^1.3.1",
+        "jest": "^23.6.0",
+        "prettier": "1.15.3",
+        "pretty-quick": "^1.8.0",
+        "ts-jest": "^23.10.5",
+        "typescript": "^3.2.2"
+    },
+    "scripts": {
+        "prepare": "npm run build",
+        "build": "tsc",
+        "test": "jest --config jestconfig.json"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
     }
-  }
 }
