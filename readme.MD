@@ -5,13 +5,28 @@
 
 
 ## Installation
-
-Install via
+Install via npm or yarn
 
 ```sh
-# Through npm
 npm i vmw-kiyoh-wrapper
+```
 
-# Through Yarn
-yarn add vmw-kiyoh-wrapper
+## usage
+
+Example 1:
+
+Set the review score in an element.
+
+```js
+let VmwKiyoh = require('vmw-kiyoh-wrapper').VMWKiyoh;
+
+Kiyoh = new VmwKiyoh();
+
+Kiyoh
+    .liveData()
+    .parseData()
+        .then( () => {
+            Kiyoh.target = '#selector'
+            Kiyoh.sendData('total_score')
+        })
 ```
