@@ -4,6 +4,7 @@ website
 node_modules
 lib
 __test__
+coverage
 
 yarn.lock
 yarn-error.log
