@@ -1,6 +1,7 @@
 # vmw-kiyoh-wrapper
 [![](https://img.shields.io/npm/dt/vmw-kiyoh-wrapper.svg?style=for-the-badge)](www.npmjs.com/package/vmw-kiyoh-wrapper)
 [![](https://img.shields.io/bundlephobia/min/vmw-kiyoh-wrapper.svg?style=for-the-badge)](www.npmjs.com/package/vmw-kiyoh-wrapper)
+[![Build Status](https://travis-ci.org/DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper.svg?branch=master)](https://travis-ci.org/DoedeJaarsmaCommunicatie/vmw-kiyoh-wrapper)
 ## Index
 
 

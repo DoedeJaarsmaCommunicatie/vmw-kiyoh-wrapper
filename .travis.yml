@@ -2,6 +2,7 @@ language: node_js
 
 node_ls:
     - 'node'
+    - '10.13'
 
 cache: yarn
 
